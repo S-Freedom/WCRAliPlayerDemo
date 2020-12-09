@@ -1,0 +1,21 @@
+#use_frameworks!
+install! 'cocoapods', :deterministic_uuids => false
+
+
+
+
+
+platform :ios, '9.0'
+
+target 'AliyunVideoClient_Entrance' do
+  
+  #友盟crash收集
+  pod 'UMCCommon','2.0.0'
+  pod 'UMCAnalytics','6.0.1'
+  
+pod 'AlivcCommon', :path => 'AlivcCommon/' 
+pod 'AlivcBasicVideo', :path => 'AlivcBasicVideo/' 
+pod 'AlivcPlayVideo', :path => 'AlivcPlayVideo/' 
+pod 'MRDLNA',:git => 'https://github.com/MQL9011/MRDLNA.git'
+
+end
